@@ -1,0 +1,19 @@
+h1{
+	color:blue;
+}
+header, footer{
+	padding: 10px;
+	background-color: yellow;
+	margin:0;
+}
+.left1{
+	width: 150px;
+	height: 500px;
+	margin: 10px 2px;
+	background-color: orange;
+	position: flex;
+	
+}
+button{
+	position:relative;
+}
