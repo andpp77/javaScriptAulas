@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="biblioteca.js"></script>
+    <title>criando um objeto</title>
+    <style>
+        #title{
+            font-weight: bold;
+        }
+        table,
+        td,
+        tr{
+            border: solid 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de produto</h1>
+    descrição do produto<br>
+    <input type="text" name="descrição_produto"><br>
+    medida do produto <br>
+    <input type="text" name="medida_produto"><br>
+    preço do produto <br>
+    <input type="text" name="preco_produto"><br>
+    validade do produto <br>
+    <input type="date" name="validade_produto"><br>
+    <button id="registrar">Registrar</button>
+    <table id="table-content">
+        <tr>
+            <td>Descrição</td>
+            <td>Validade</td>
+            <td>Medida</td>
+            <td>Preço</td>
+        </tr>
+    </table>
+    <script>
+        const btn = document.getElementById("Registrar");
+        btn.addEventListener("click", addProduto)
+    </script>
+</body>
+</html>

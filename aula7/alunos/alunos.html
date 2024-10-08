@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="alunoscadastro.js"></script>
+    <title>criando um objeto</title>
+    <style>
+        #title{
+            font-weight: bold;
+        }
+        table,
+        td,
+        tr{
+            border: solid 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de alunos</h1>
+    Nome do aluno<br>
+    <input type="text" name="nome_aluno"><br>
+    Idade do aluno <br>
+    <input type="date" name="idade_aluno"><br>
+    RA do aluno <br>
+    <input type="number" name="ra_aluno"><br>
+    Disciplina do Aluno <br>
+    <input type="text" name="disciplina_aluno"><br>
+    <button id="registrar">Registrar</button>
+    <table id="table-content">
+        <tr>
+            <td>Nome</td>
+            <td>Idade</td>
+            <td>RA</td>
+            <td>Disciplina</td>
+        </tr>
+    </table>
+    <script>
+        const btn = document.getElementById("Registrar");
+        btn.addEventListener("click", addAluno)
+    </script>
+</body>
+</html>

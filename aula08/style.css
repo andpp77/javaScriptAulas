@@ -1,0 +1,13 @@
+.caixa{
+    width: 300px;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: justify;
+    border: solid 2px;
+}
+.caixaFilho{
+    margin: 20px auto;
+    padding: 30px;
+    text-align: justify;
+    border: solid 2px;
+}

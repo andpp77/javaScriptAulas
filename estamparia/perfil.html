@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REstamparia Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="./imgs/makeartlogo.png" alt="makeArtLogo">
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">🏠 Início</a>
+                </li>
+                <li>
+                    <a href="./perfil.html">👤 Perfil</a>
+                </li>
+                <li>
+                    <a href="./configuracoes.html">⚙️ Configurações</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main class="mainPerfil">
+        <article>
+            <h2>Adicionar Contato:</h2>
+            <br>
+            <label for="nomeUsuario">Nome Completo:</label>
+            <input type="text" name="nome" id="nomeUsuario">
+            <br>
+            <label for="emailUsuario">Endereço de Email:</label>
+            <input type="text" name="email" id="emailUsuario">
+            <br>
+            <label for="mensagemUsuario">Mensagem:</label>
+            <br>
+            <textarea name="caixaTexto" id="mensagemUsuario" cols="30" rows="10" placeholder="Digite Aqui"></textarea>
+            <br>
+            <select name="select" id="selectUsuario">
+                <option value="">Selecione um Assunto</option>
+                <option value="feedback">Feedback</option>
+                <option value="informacao">Informação</option>
+                <option value="perguntas">Perguntas</option>
+            </select>
+            <br>
+            <label for="checkboxUsuario">Deseja receber newsletter ?</label>
+            <input type="checkbox" name="checkbox" id="checkboxUsuario">
+            <br>
+            <input type="submit" value="Enviar"><input type="date" name="validade_produto"><br>
+            <button id="registrar">Registrar</button>
+        </article>
+        <article>
+            <table id="table-content">
+                <tr>
+                    <td>Nome</td>
+                    <td>Email</td>
+                </tr>
+            </table>
+            <script>
+                const btn = document.getElementById("Registrar");
+                btn.addEventListener("click", addProduto)
+            </script>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 MakeArt. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

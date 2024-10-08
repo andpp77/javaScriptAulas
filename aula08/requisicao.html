@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="buscaCep.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caixa">
+        <h2>Digite um CEP para verificar</h2><br>
+            <input type="text" id="cep"><br>
+            <button id="buscar">Consultar CEP</button>
+        <div class="caixaFilho" id="resultado">
+        </div>
+    </div>
+    <script>
+        const btn = document.getElementById("buscar");
+        btn.addEventListener("click", buscarCep);
+    </script>
+</body>
+</html>
