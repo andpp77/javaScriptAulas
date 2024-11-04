@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula de java Script</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exemplo 1 - alterando o texto</h1>
+    <p id="paragrafo">este texto inicial</p>
+    <button onclick="alterarTexto('paragrafo','o texto foi alterado')">
+        clique para alterar o Texto
+    </button>
+    <h1>Exemplo 2 - alterando cor</h1>
+    <div id="caixa" 
+    style="width: 100px; height: 100px; background-color: blueviolet;" ></div>
+    <br>
+    <button onclick="mudarestilo('caixa','backgroundColor','red')">
+        Mudar cor
+    </button>
+    <h1>Exemplo 3 - Exibindo mensagem</h1>
+    <input type="text" id="nome" placeholder="Digite seu Nome">
+    <button onclick="exibirMensagem('nome','saida')">Exibir Nome</button>
+    <p id="saida"></p>
+</body>
+</html>
