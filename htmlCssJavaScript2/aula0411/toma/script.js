@@ -9,6 +9,14 @@ function mudarestilo(id,propriedade,valor){
 //Elemento 3 - interagindo com um campo texto
 function exibirMensagem(inputId, outputId){
     let nome = document.getElementById(inputId).value;
-    document.getElementById(outputId).innerText = "Olá," + nome + "!";
-    
+    if(nome == ''){
+        alert("O nome não pode estar vazio");
+    }else{
+        document.getElementById(outputId).innerText = "Olá," + nome + "!";
+    }
+}
+//Exemplo 4 - Alternando visibilidade de um elemento
+function alternarVisibilidade(id){
+    let elemento = document.getElementById(id);
+    elemento.style.display = (elemento.style.display === "none") ? "block" : "none";
 }
